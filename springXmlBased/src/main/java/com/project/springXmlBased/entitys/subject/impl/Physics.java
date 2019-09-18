@@ -1,0 +1,14 @@
+package com.project.springXmlBased.entitys.subject.impl;
+
+import com.project.springXmlBased.entitys.subject.Subject;
+import lombok.Data;
+
+@Data
+public class Physics implements Subject {
+    private static final String SUBJECT_NAME = "Physics";
+
+    @Override
+    public String getSubjectName() {
+        return SUBJECT_NAME;
+    }
+}
